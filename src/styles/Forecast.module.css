@@ -1,0 +1,45 @@
+.forecast {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px var(--shadow-color);
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.forecast h3 {
+  color: var(--accent-color);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.forecastList {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.forecastItem {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  width: fit-content;
+  padding: 20px;
+  box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+.forecastItem img {
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+
+.forecastItem img:hover {
+  transform: scale(1.2);
+}
+
+.forecastItem p {
+  color: #fff;
+  font-size: 1rem;
+}

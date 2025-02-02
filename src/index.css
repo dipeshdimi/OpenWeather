@@ -1,0 +1,27 @@
+:root {
+  --primary-bg-color: #121212;
+  --secondary-bg-color: #1a1a1a;
+  --accent-color: #00bcd4;
+  --text-color: #e0e0e0;
+  --button-bg-color: #ff5722;
+  --button-hover-color: #ff3d00;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --input-border: #444;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

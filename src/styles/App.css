@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px var(--shadow-color);
+  background: linear-gradient(135deg, #1d1d1d, #121212);
+  background-size: 200% 200%;
+  animation: background-animation 8s ease infinite;
+  width: 100%;
+  min-height: 100dvh;
+}
+
+@keyframes background-animation {
+  0% {
+    background-position: 200% 200%;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 200% 200%;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: var(--accent-color);
+}
+
+.weather-info {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px var(--shadow-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.weather-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.4) 25%,
+    transparent 75%
+  );
+  z-index: 1;
+  opacity: 0.4;
+}
+
+.weather-info img {
+  width: 70px;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.weather-info img:hover {
+  transform: scale(1.1);
+}
+
+button {
+  background-color: var(--button-bg-color);
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 25px;
+  position: relative;
+  z-index: 2;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+  box-shadow: 0 0 20px rgba(255, 87, 34, 0.8);
+}
+
+input {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid var(--input-border);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  background-color: rgba(255, 255, 255, 0.15);
+}
