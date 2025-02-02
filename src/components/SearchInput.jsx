@@ -31,7 +31,7 @@ const SearchInput = () => {
           className={styles.button}
           onClick={() => setUnit((prevUnit) => (prevUnit === 'metric' ? 'imperial' : 'metric'))}
         >
-          Switch to {unit === 'metric' ? 'Fahrenheit' : "Celcius"}
+          Switch to {unit === 'metric' ? 'Fahrenheit' : "Celsius "}
         </button>
       </div>
     </form>
