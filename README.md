@@ -1,8 +1,51 @@
-# React + Vite
+# Weather Application
+Live Deployment: https://open-weather-kappa.vercel.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+- OpenWeatherMap API
+- React Query Caching
+- API Polling
+- React Context API
+- Error Handling
+- Celsius & Fahrenheit conversions
+- Last searched city in localStorage
+- CSS Modules
+- Responsiveness
+- Functional Components
+- Vite
 
-Currently, two official plugins are available:
+## Installation & Usage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To get started with this project, you'll need to install it locally on your machine. Follow these steps:
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/dipeshdimi/OpenWeather.git
+    ```
+
+2. Navigate to the project folder:
+
+    ```bash
+    cd OpenWeather
+    ```
+
+3. Install dependenncies:
+
+    ```bash
+    npm install
+    ```
+    
+6. Create a .env file in the root directory and provide the OpenWeather API key (test key provided):
+
+    ```bash
+    VITE_OPENWEATHER_API_KEY=bd5e378503939ddaee76f12ad7a97608
+    ```
+
+7. Run the frontend application:
+   
+   ```bash
+    npm run dev
+    ```
+
+13. Visit http://localhost:5173/ to use the application.
